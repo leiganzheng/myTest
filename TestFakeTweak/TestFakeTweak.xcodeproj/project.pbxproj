@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB74AE8D1E5ED94B007966DC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB74AE8C1E5ED94B007966DC /* ViewController.m */; };
+		BB7E43391E5EE02D00794EFB /* WPFInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = BB7E43381E5EE02D00794EFB /* WPFInfo.m */; };
 		D896D5071CF604FC00DD574E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D896D5061CF604FC00DD574E /* main.m */; };
 		D896D50A1CF604FC00DD574E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D896D5091CF604FC00DD574E /* AppDelegate.m */; };
-		D896D50D1CF604FC00DD574E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D896D50C1CF604FC00DD574E /* ViewController.m */; };
 		D896D5101CF604FC00DD574E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D896D50E1CF604FC00DD574E /* Main.storyboard */; };
 		D896D5121CF604FC00DD574E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D896D5111CF604FC00DD574E /* Assets.xcassets */; };
 		D896D5151CF604FC00DD574E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D896D5131CF604FC00DD574E /* LaunchScreen.storyboard */; };
@@ -20,12 +21,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BB74AE8B1E5ED94B007966DC /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BB74AE8C1E5ED94B007966DC /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BB7E43371E5EE02D00794EFB /* WPFInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPFInfo.h; sourceTree = "<group>"; };
+		BB7E43381E5EE02D00794EFB /* WPFInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPFInfo.m; sourceTree = "<group>"; };
 		D896D5021CF604FC00DD574E /* TestFakeTweak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestFakeTweak.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D896D5061CF604FC00DD574E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D896D5081CF604FC00DD574E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D896D5091CF604FC00DD574E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D896D50B1CF604FC00DD574E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D896D50C1CF604FC00DD574E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D896D50F1CF604FC00DD574E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D896D5111CF604FC00DD574E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D896D5141CF604FC00DD574E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -52,6 +55,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BB7E43361E5EE02D00794EFB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BB7E43371E5EE02D00794EFB /* WPFInfo.h */,
+				BB7E43381E5EE02D00794EFB /* WPFInfo.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		D896D4F91CF604FC00DD574E = {
 			isa = PBXGroup;
 			children = (
@@ -74,11 +86,12 @@
 		D896D5041CF604FC00DD574E /* TestFakeTweak */ = {
 			isa = PBXGroup;
 			children = (
+				BB7E43361E5EE02D00794EFB /* Model */,
+				BB74AE8B1E5ED94B007966DC /* ViewController.h */,
+				BB74AE8C1E5ED94B007966DC /* ViewController.m */,
 				D896D51C1CF6809000DD574E /* Package */,
 				D896D5081CF604FC00DD574E /* AppDelegate.h */,
 				D896D5091CF604FC00DD574E /* AppDelegate.m */,
-				D896D50B1CF604FC00DD574E /* ViewController.h */,
-				D896D50C1CF604FC00DD574E /* ViewController.m */,
 				D896D50E1CF604FC00DD574E /* Main.storyboard */,
 				D896D5111CF604FC00DD574E /* Assets.xcassets */,
 				D896D5131CF604FC00DD574E /* LaunchScreen.storyboard */,
@@ -209,9 +222,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D896D50D1CF604FC00DD574E /* ViewController.m in Sources */,
+				BB7E43391E5EE02D00794EFB /* WPFInfo.m in Sources */,
 				D896D50A1CF604FC00DD574E /* AppDelegate.m in Sources */,
 				D896D5071CF604FC00DD574E /* main.m in Sources */,
+				BB74AE8D1E5ED94B007966DC /* ViewController.m in Sources */,
 				D896D5241CF682E100DD574E /* TweakBridgeIOS.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -332,6 +346,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jackrex.TestFakeTweak;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				iOSOpenDevBuildPackageOnAnyBuild = NO;
 				iOSOpenDevCopyOnBuild = NO;
 				iOSOpenDevDevice = 192.168.5.30;
@@ -353,6 +368,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jackrex.TestFakeTweak;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				iOSOpenDevBuildPackageOnAnyBuild = NO;
 				iOSOpenDevCopyOnBuild = NO;
 				iOSOpenDevDevice = 192.168.5.30;
